@@ -1,0 +1,54 @@
+# StageGenX — Default Hyperparameters
+# All values match the paper (stagegenx_final_v2.tex)
+
+data:
+  window_size: 60          # W — seconds
+  stride: 10
+  train_split: 0.70
+  val_split:   0.15
+  test_split:  0.15
+  augmented_attack_fraction: 0.40
+  clip_percentile_low:  1
+  clip_percentile_high: 99
+
+model:
+  stage_emb_dim: 16        # d_e
+  lstm_layers:   2
+  hidden_dim:    128       # H
+  latent_dim:    32        # d_z
+  dropout:       0.1
+  num_stages:    6         # S
+
+scvae:
+  beta:          4         # KL weight
+  epochs:        200
+  lr:            1.0e-3
+  batch_size:    64
+
+scwgan:
+  epochs:        300
+  lr:            1.0e-3
+  beta1:         0.5
+  beta2:         0.9
+  batch_size:    64
+  n_critic:      5         # n_c
+  gp_lambda:     10        # gradient penalty λ
+  phys_lambda:   0.1       # λ_phys
+
+covae:
+  beta:          4
+  epochs:        200
+  lr:            1.0e-3
+  batch_size:    64
+
+ids:
+  hidden_dim:    64
+  epochs:        100
+  lr:            1.0e-3
+  batch_size:    64
+
+eval:
+  mmd_kernel:    rbf
+  mmd_gamma:     1.0
+  n_generated_per_stage: 1000
+  seeds: [42, 123, 2024, 7, 31]

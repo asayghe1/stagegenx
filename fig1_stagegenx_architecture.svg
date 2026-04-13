@@ -1,0 +1,44 @@
+<svg width="680" height="480" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<!-- Input box -->
+<rect x="170" y="20" width="340" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="41" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Sensor input X</text>
+<text x="340" y="61" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Stage label s  ·  P1–P6  ·  86 features</text>
+<!-- Arrow down -->
+<line x1="340" y1="76" x2="340" y2="96" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- Stage embedding box -->
+<rect x="220" y="96" width="240" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="340" y="117" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#633806">Stage embedding</text>
+<text x="340" y="137" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">6 stages → R¹⁶  ·  broadcast per timestep</text>
+<!-- L-bend arrows to SCVAE and SCWGAN -->
+<path d="M220,124 L165,124 L165,178" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M460,124 L515,124 L515,178" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- SCVAE box -->
+<rect x="30" y="178" width="270" height="82" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="165" y="199" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">SCVAE</text>
+<text x="165" y="219" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">LSTM encoder + decoder</text>
+<text x="165" y="239" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">stage emb. at each layer</text>
+<!-- SCWGAN box -->
+<rect x="380" y="178" width="270" height="82" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="515" y="199" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#3C3489">SCWGAN-GP</text>
+<text x="515" y="219" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">LSTM generator + critic</text>
+<text x="515" y="239" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">stage emb. at each layer</text>
+<!-- L-bends to synthetic output -->
+<path d="M165,260 L165,284 L330,284" fill="none" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M515,260 L515,284 L350,284" fill="none" stroke="#5F5E5A" stroke-width="1.5"/>
+<line x1="340" y1="284" x2="340" y2="296" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- Synthetic output box -->
+<rect x="160" y="296" width="360" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="340" y="317" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">Synthetic attack windows X̃ | s</text>
+<text x="340" y="337" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#185FA5">stage-specific  ·  N × W × 86  ·  physically plausible</text>
+<!-- Arrow to IDS -->
+<line x1="340" y1="352" x2="340" y2="372" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- IDS box -->
+<rect x="190" y="372" width="300" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="340" y="393" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">Downstream IDS (LSTM-AE)</text>
+<text x="340" y="413" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#993C1D">trained on augmented balanced set</text>
+</svg>

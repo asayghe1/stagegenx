@@ -1,0 +1,16 @@
+SWaT.A9_18 Dec 2023 & WaDi.A3_18 Dec 2023
+-----------------------------------------
+Characteristics of the Datasets 18 Dec – 22 Dec 2023 SWaT.A9_18 Dec 2023 & WaDi.A3_18 Dec 2023 datasets, i.e., 100 Hour Run Dataset
+
+1.	105 hours of continuous operations of both SWaT and WaDi testbeds under normal 	conditions.
+2.	The first 5 hours of continuous run of both testbeds was not in CrossOver mode, 	i.e., each testbed was run in a closed loop.
+3.	The testbeds were run for the remaining 100 hours in CrossOver mode.
+4.	No attacks were performed, i.e., Clean Dataset.
+5.	The flow rate of the WaDi Consumer Tank 2 was deliberately set to 0.00 m^3/h to 	avoid triggering its faulty sensor.
+6.	The following files are available:
+a.	The PCAPs for the 100 Hour Run Dataset 
+		• Total number of files and respective data size: 4,106 x 190MB files 			  totalling 764 GB
+		• WaDi: 1,804 x 190MB files totalling 335 GB
+		• SWaT: 2,302 x 190MB files totalling 429 GB
+b.	The Historian Datasets for both SWaT and WaDi*
+c.	The NetFlow logs (Incomplete Set – The Net_Flow VM was not able to capture the 	full run due to its unavailability)*

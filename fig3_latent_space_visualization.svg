@@ -1,0 +1,34 @@
+<svg width="680" height="300" viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<!-- Left panel: unconditioned -->
+<rect x="20" y="30" width="300" height="240" rx="12" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="170" y="55" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Unconditioned latent space</text>
+<!-- Blurred blob (nested ellipses) -->
+<ellipse cx="170" cy="162" rx="108" ry="72" fill="#D3D1C7" stroke="#888780" stroke-width="0.5" opacity="0.6"/>
+<ellipse cx="158" cy="155" rx="78" ry="52" fill="#B4B2A9" stroke="#888780" stroke-width="0.5" opacity="0.5"/>
+<ellipse cx="175" cy="168" rx="50" ry="34" fill="#888780" stroke="#5F5E5A" stroke-width="0.5" opacity="0.4"/>
+<text x="170" y="159" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">P1–P6 mixed</text>
+<text x="170" y="175" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">no structure</text>
+<text x="170" y="256" text-anchor="middle" font-size="11" fill="#5F5E5A">Single blurred manifold  ·  MMD = 0.0423</text>
+<!-- Right panel: stage-conditioned -->
+<rect x="360" y="30" width="300" height="240" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="510" y="55" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#3C3489">Stage-conditioned (ours)</text>
+<!-- P1 cluster -->
+<ellipse cx="420" cy="105" rx="34" ry="22" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="420" y="105" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P1</text>
+<!-- P2 cluster -->
+<ellipse cx="510" cy="90" rx="34" ry="22" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="510" y="90" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">P2</text>
+<!-- P3 cluster -->
+<ellipse cx="600" cy="108" rx="34" ry="22" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="600" y="108" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#3C3489">P3</text>
+<!-- P4 cluster -->
+<ellipse cx="420" cy="200" rx="34" ry="22" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="420" y="200" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">P4</text>
+<!-- P5 cluster -->
+<ellipse cx="510" cy="215" rx="34" ry="22" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="510" y="215" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#633806">P5</text>
+<!-- P6 cluster -->
+<ellipse cx="600" cy="200" rx="34" ry="22" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="600" y="200" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#27500A">P6</text>
+<text x="510" y="256" text-anchor="middle" font-size="11" fill="#534AB7">Six structured manifolds  ·  MMD = 0.0187</text>
+</svg>

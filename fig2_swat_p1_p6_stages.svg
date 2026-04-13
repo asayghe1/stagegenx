@@ -1,0 +1,56 @@
+<svg width="680" height="200" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<!-- P1 -->
+<rect x="30" y="50" width="88" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="74" y="78" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P1</text>
+<text x="74" y="98" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Raw water</text>
+<text x="74" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">supply</text>
+<line x1="118" y1="90" x2="132" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- P2 -->
+<rect x="132" y="50" width="88" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="176" y="78" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P2</text>
+<text x="176" y="98" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Chemical</text>
+<text x="176" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">pre-treat.</text>
+<line x1="220" y1="90" x2="234" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- P3 -->
+<rect x="234" y="50" width="88" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="278" y="78" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P3</text>
+<text x="278" y="98" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">UF</text>
+<text x="278" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">filtration</text>
+<line x1="322" y1="90" x2="336" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- P4 -->
+<rect x="336" y="50" width="88" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="380" y="78" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P4</text>
+<text x="380" y="98" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Dechlorin-</text>
+<text x="380" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">ation</text>
+<line x1="424" y1="90" x2="438" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- P5 -->
+<rect x="438" y="50" width="88" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="482" y="78" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P5</text>
+<text x="482" y="98" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Reverse</text>
+<text x="482" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">osmosis</text>
+<line x1="526" y1="90" x2="540" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- P6 -->
+<rect x="540" y="50" width="88" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="584" y="78" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">P6</text>
+<text x="584" y="98" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Clean water</text>
+<text x="584" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">storage</text>
+<!-- Sensor labels -->
+<text x="74"  y="148" text-anchor="middle" font-size="11" fill="#5F5E5A">LIT101, FIT101</text>
+<text x="176" y="148" text-anchor="middle" font-size="11" fill="#5F5E5A">AIT201–203</text>
+<text x="278" y="148" text-anchor="middle" font-size="11" fill="#5F5E5A">LIT301, FIT301</text>
+<text x="380" y="148" text-anchor="middle" font-size="11" fill="#5F5E5A">LIT401, AIT401</text>
+<text x="482" y="148" text-anchor="middle" font-size="11" fill="#5F5E5A">PIT501–503</text>
+<text x="584" y="148" text-anchor="middle" font-size="11" fill="#5F5E5A">LIT601–602</text>
+<!-- Raw water inlet label -->
+<text x="8" y="86" text-anchor="start" font-size="11" fill="#5F5E5A">Raw</text>
+<text x="8" y="98" text-anchor="start" font-size="11" fill="#5F5E5A">water</text>
+<line x1="26" y1="90" x2="30" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+<!-- WaDi outlet -->
+<text x="638" y="90" text-anchor="start" font-size="11" fill="#5F5E5A">WaDi</text>
+<line x1="628" y1="90" x2="638" y2="90" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,77 @@
+<svg width="680" height="520" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#BA7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#993C1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- Stage embedding -->
+<rect x="220" y="20" width="240" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="340" y="41" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#633806">Stage embedding  e_s</text>
+<text x="340" y="61" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">s ∈ {P1,…,P6}  →  R¹⁶ learnable lookup</text>
+
+<!-- Branches: amber left, purple right -->
+<path d="M295,76 L295,130 L218,130 L218,188" fill="none" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr-amber)"/>
+<path d="M385,76 L385,130 L462,130 L462,188" fill="none" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arr-purple)"/>
+
+<!-- Scale projection -->
+<rect x="88" y="188" width="260" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="218" y="209" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#633806">Scale projection  γ(s)</text>
+<text x="218" y="229" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">W_γ · e_s + b_γ  →  R^H</text>
+
+<!-- Shift projection -->
+<rect x="332" y="188" width="260" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="462" y="209" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#3C3489">Shift projection  β(s)</text>
+<text x="462" y="229" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">W_β · e_s + b_β  →  R^H</text>
+
+<!-- Arrows from projections to FiLM box -->
+<path d="M218,244 L218,298 L238,298" fill="none" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr-amber)"/>
+<path d="M462,244 L462,298 L442,298" fill="none" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arr-purple)"/>
+
+<!-- LSTM hidden input -->
+<rect x="40" y="280" width="120" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="100" y="302" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">LSTM hidden  h̃_t</text>
+<line x1="160" y1="302" x2="238" y2="302" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- FiLM modulation box -->
+<rect x="238" y="268" width="204" height="70" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="340" y="291" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#712B13">FiLM modulation</text>
+<text x="340" y="311" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#993C1D">h_t  =  γ(s) ⊙ h̃_t  +  β(s)</text>
+<text x="340" y="328" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">element-wise  ·  ⊙ = Hadamard product</text>
+
+<!-- Output arrow to modulated hidden -->
+<line x1="442" y1="303" x2="520" y2="303" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arr-coral)"/>
+
+<!-- Modulated hidden output -->
+<rect x="520" y="280" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="590" y="295" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#085041">Modulated  h_t</text>
+<text x="590" y="312" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56">stage-aware hidden</text>
+
+<!-- Arrow down to next layer -->
+<line x1="590" y1="324" x2="590" y2="364" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- Next LSTM layer -->
+<rect x="410" y="364" width="250" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="535" y="379" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#085041">Next LSTM layer / output</text>
+<text x="535" y="397" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56">applied at every layer</text>
+
+<!-- Dashed box: applied inside -->
+<rect x="40" y="360" width="340" height="138" rx="10" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="5,3"/>
+<text x="210" y="384" text-anchor="middle" font-size="12" font-weight="500" fill="#444441">Applied inside:</text>
+<text x="60" y="408" font-size="11" fill="#5F5E5A">SCVAE encoder  — all encoder LSTM layers</text>
+<text x="60" y="428" font-size="11" fill="#5F5E5A">SCVAE decoder  — all decoder LSTM layers</text>
+<text x="60" y="448" font-size="11" fill="#5F5E5A">SCWGAN generator — all generator LSTM layers</text>
+<text x="60" y="468" font-size="11" fill="#5F5E5A">SCWGAN critic    — all critic LSTM layers</text>
+
+<!-- Bottom note -->
+<text x="340" y="508" text-anchor="middle" font-size="11" fill="#5F5E5A">γ(s) can suppress dimensions irrelevant to stage s  →  learnable per-stage feature attention mask</text>
+</svg>

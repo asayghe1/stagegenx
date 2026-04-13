@@ -1,0 +1,56 @@
+# ── Data (never commit raw CSV / processed tensors) ───────────────
+data/**/*.csv
+data/**/*.pt
+data/**/*.pkl
+data/**/*.npy
+data/**/*.npz
+!data/.gitkeep
+!data/*.txt
+
+# ── Model checkpoints ──────────────────────────────────────────────
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# ── Python cache ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Environment ────────────────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+
+# ── IDE ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── LaTeX build artefacts ──────────────────────────────────────────
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.pdf
+
+# ── TensorBoard logs ───────────────────────────────────────────────
+runs/
+logs/

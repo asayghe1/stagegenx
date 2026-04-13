@@ -1,0 +1,134 @@
+<svg width="680" height="600" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#A32D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-dash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- ── FIELD LEVEL ─────────────────────────────────────────────── -->
+<text x="24" y="20" font-size="10" font-weight="500" fill="#888780" letter-spacing="1">FIELD LEVEL</text>
+<rect x="20" y="28" width="640" height="76" rx="8" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<rect x="36" y="40" width="118" height="52" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="95" y="60" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">PLC  P1–P2</text>
+<text x="95" y="78" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">EtherNet/IP</text>
+
+<rect x="174" y="40" width="118" height="52" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="233" y="60" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">PLC  P3–P4</text>
+<text x="233" y="78" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">Modbus TCP</text>
+
+<rect x="312" y="40" width="118" height="52" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="371" y="60" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">PLC  P5–P6</text>
+<text x="371" y="78" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">EtherNet/IP</text>
+
+<rect x="450" y="40" width="192" height="52" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="546" y="60" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">Sensors / Actuators</text>
+<text x="546" y="78" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">LIT, FIT, AIT, P_STATE tags</text>
+
+<line x1="95"  y1="92" x2="95"  y2="130" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="233" y1="92" x2="233" y2="130" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="371" y1="92" x2="371" y2="130" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="546" y1="92" x2="546" y2="130" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- ── OPC UA / SCADA LEVEL ────────────────────────────────────── -->
+<text x="24" y="122" font-size="10" font-weight="500" fill="#888780" letter-spacing="1">OPC UA / SCADA LEVEL</text>
+<rect x="20" y="128" width="640" height="68" rx="8" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<rect x="36" y="140" width="280" height="46" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="176" y="158" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#0C447C">OPC UA server  (IEC 62541)</text>
+<text x="176" y="176" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#185FA5">MonitoredItem subscription  ·  1 Hz</text>
+
+<rect x="340" y="140" width="302" height="46" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="491" y="158" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#0C447C">SCADA HMI / Historian</text>
+<text x="491" y="176" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#185FA5">OSIsoft PI  ·  Wonderware InTouch</text>
+
+<line x1="316" y1="163" x2="340" y2="163" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<line x1="176" y1="186" x2="176" y2="220" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="491" y1="186" x2="491" y2="220" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- ── ONLINE INFERENCE ───────────────────────────────────────── -->
+<text x="24" y="212" font-size="10" font-weight="500" fill="#888780" letter-spacing="1">ONLINE INFERENCE  (≤ 4.18 ms / window  ·  &gt;200× SCADA budget margin)</text>
+<rect x="20" y="220" width="640" height="126" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+
+<rect x="36" y="234" width="172" height="50" rx="6" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="122" y="252" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#085041">Sliding window buffer</text>
+<text x="122" y="270" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56">W = 60 s  ·  stride 10</text>
+
+<line x1="208" y1="259" x2="244" y2="259" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="244" y="234" width="148" height="50" rx="6" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="318" y="252" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#085041">Stage extractor</text>
+<text x="318" y="270" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56">P_STATE tag  →  s ∈ {1…6}</text>
+
+<line x1="392" y1="259" x2="428" y2="259" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="428" y="234" width="214" height="50" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="535" y="252" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#712B13">LSTM-AE IDS scorer</text>
+<text x="535" y="270" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">recon.\ error  ·  0.12M params  ·  4.18 ms</text>
+
+<line x1="535" y1="284" x2="535" y2="308" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="374" y="308" width="286" height="26" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="517" y="321" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#712B13">anomaly score → alert flag  ·  OPC UA Alarm&amp;Events channel</text>
+
+<line x1="535" y1="334" x2="535" y2="358" stroke="#A32D2D" stroke-width="1.5" marker-end="url(#arr-red)"/>
+
+<!-- ── ENTERPRISE / SIEM LEVEL ────────────────────────────────── -->
+<text x="24" y="352" font-size="10" font-weight="500" fill="#888780" letter-spacing="1">ENTERPRISE / SIEM LEVEL</text>
+<rect x="20" y="358" width="640" height="52" rx="8" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<rect x="36" y="370" width="186" height="30" rx="6" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text x="129" y="385" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#791F1F">SIEM / SOC dashboard</text>
+
+<rect x="242" y="370" width="196" height="30" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="385" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">Incident response workflow</text>
+
+<rect x="458" y="370" width="184" height="30" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="550" y="385" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">Audit log / compliance</text>
+
+<path d="M535,358 L129,358 L129,370" fill="none" stroke="#A32D2D" stroke-width="1.5" marker-end="url(#arr-red)"/>
+<path d="M535,358 L340,358 L340,370" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+<path d="M535,358 L550,358 L550,370" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- ── OFFLINE TRAINING ───────────────────────────────────────── -->
+<text x="24" y="430" font-size="10" font-weight="500" fill="#888780" letter-spacing="1">OFFLINE TRAINING  (air-gapped engineering workstation — never touches live network)</text>
+<rect x="20" y="440" width="640" height="144" rx="8" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="8,4"/>
+
+<rect x="36" y="454" width="132" height="52" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="102" y="473" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#3C3489">Historian CSV</text>
+<text x="102" y="491" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">SWaT.A12 + WaDi.A3</text>
+
+<line x1="168" y1="480" x2="198" y2="480" stroke="#888780" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr-dash)"/>
+
+<rect x="198" y="454" width="146" height="52" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="271" y="473" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#3C3489">StageGenX train</text>
+<text x="271" y="491" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">SCVAE + SCWGAN-GP</text>
+
+<line x1="344" y1="480" x2="374" y2="480" stroke="#888780" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr-dash)"/>
+
+<rect x="374" y="454" width="142" height="52" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="445" y="473" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#3C3489">Augmented set</text>
+<text x="445" y="491" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">real + synthetic attacks</text>
+
+<line x1="516" y1="480" x2="546" y2="480" stroke="#888780" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr-dash)"/>
+
+<rect x="546" y="454" width="96" height="52" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="594" y="473" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#3C3489">LSTM-AE IDS</text>
+<text x="594" y="491" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">train frozen</text>
+
+<text x="340" y="528" text-anchor="middle" font-size="11" fill="#5F5E5A">Drift detection: retrain when 24-hr mean recon.\ error &gt; μ₀ + 3σ₀</text>
+<text x="340" y="546" text-anchor="middle" font-size="11" fill="#5F5E5A">Validate: F1 ≥ 0.90 on SWaT.A1 attack test set before re-deployment</text>
+
+<path d="M594,506 L594,562 L460,562 L460,516" fill="none" stroke="#534AB7" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr-purple)"/>
+<text x="510" y="558" text-anchor="middle" font-size="10" fill="#534AB7">deploy frozen weights</text>
+</svg>

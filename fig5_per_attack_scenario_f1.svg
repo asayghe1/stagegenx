@@ -1,0 +1,58 @@
+<svg width="680" height="340" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<text x="220" y="20" text-anchor="middle" font-size="12" fill="#5F5E5A">Unconditioned</text>
+<text x="440" y="20" text-anchor="middle" font-size="12" fill="#085041">StageGenX (ours)</text>
+<text x="610" y="20" text-anchor="middle" font-size="12" fill="#5F5E5A">Stage</text>
+<!-- Row 1 -->
+<text x="60" y="58" text-anchor="start" font-size="12" fill="#2C2C2A">LIT101 spoofing</text>
+<rect x="150" y="44" width="163" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="232" y="57" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.812</text>
+<rect x="350" y="44" width="175" height="26" rx="4" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="437" y="57" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">0.871  (+5.9)</text>
+<text x="600" y="58" text-anchor="middle" font-size="12" fill="#5F5E5A">P1</text>
+<!-- Row 2 -->
+<text x="60" y="98" text-anchor="start" font-size="12" fill="#2C2C2A">MV101 manip.</text>
+<rect x="150" y="84" width="156" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="228" y="97" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.780</text>
+<rect x="350" y="84" width="171" height="26" rx="4" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="436" y="97" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">0.856  (+7.6)</text>
+<text x="600" y="98" text-anchor="middle" font-size="12" fill="#5F5E5A">P1</text>
+<!-- Row 3 -->
+<text x="60" y="138" text-anchor="start" font-size="12" fill="#2C2C2A">MV301 manip.</text>
+<rect x="150" y="124" width="157" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="228" y="137" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.784</text>
+<rect x="350" y="124" width="173" height="26" rx="4" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="437" y="137" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">0.863  (+7.9)</text>
+<text x="600" y="138" text-anchor="middle" font-size="12" fill="#5F5E5A">P3</text>
+<!-- Row 4 -->
+<text x="60" y="178" text-anchor="start" font-size="12" fill="#2C2C2A">LIT301 spoofing</text>
+<rect x="150" y="164" width="162" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="231" y="177" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.808</text>
+<rect x="350" y="164" width="168" height="26" rx="4" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="434" y="177" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">0.859  (+5.1)</text>
+<text x="600" y="178" text-anchor="middle" font-size="12" fill="#5F5E5A">P3</text>
+<!-- Row 5 — biggest gain -->
+<text x="60" y="218" text-anchor="start" font-size="12" fill="#2C2C2A">PIT501 spoofing</text>
+<rect x="150" y="204" width="150" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="225" y="217" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.751</text>
+<rect x="350" y="204" width="177" height="26" rx="4" fill="#5DCAA5" stroke="#0F6E56" stroke-width="0.8"/>
+<text x="438" y="217" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#085041">0.882  (+13.1)</text>
+<text x="600" y="218" text-anchor="middle" font-size="12" fill="#5F5E5A">P5</text>
+<!-- Row 6 -->
+<text x="60" y="258" text-anchor="start" font-size="12" fill="#2C2C2A">P501 shutdown</text>
+<rect x="150" y="244" width="154" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="227" y="257" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.769</text>
+<rect x="350" y="244" width="175" height="26" rx="4" fill="#5DCAA5" stroke="#0F6E56" stroke-width="0.8"/>
+<text x="437" y="257" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#085041">0.876  (+10.7)</text>
+<text x="600" y="258" text-anchor="middle" font-size="12" fill="#5F5E5A">P5</text>
+<!-- Row 7 -->
+<text x="60" y="298" text-anchor="start" font-size="12" fill="#2C2C2A">P101 shutdown</text>
+<rect x="150" y="284" width="161" height="26" rx="4" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text x="230" y="297" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">0.803</text>
+<rect x="350" y="284" width="169" height="26" rx="4" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="435" y="297" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">0.854  (+5.1)</text>
+<text x="600" y="298" text-anchor="middle" font-size="12" fill="#5F5E5A">P1</text>
+<!-- Dividers -->
+<line x1="150" y1="30" x2="150" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
+<line x1="350" y1="30" x2="350" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
+<line x1="540" y1="30" x2="540" y2="316" stroke="#B4B2A9" stroke-width="0.5"/>
+</svg>
